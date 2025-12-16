@@ -114,7 +114,7 @@ The web app uses the same semantic search logic as the API and is intended for d
 
 📸 Streamlit UI Screenshot
 ![Streamlit App UI](images/streamlit_app.py.png)
-
+Deployed on -> https://shlassesmentbyuday.streamlit.app/
 
 -----------------------------------------------------------------------------------------------------------------
 Evaluation Methodology
