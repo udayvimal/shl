@@ -138,7 +138,10 @@ Directory Structure
 The repository is organized in a step-wise and reproducible manner:
 
 shl/
-app.py                     # Streamlit web application step1_scrape_shl.py         # SHL catalog scraping
+│
+├── app.py                      # Streamlit web application
+│
+├── step1_scrape_shl.py         # SHL catalog scraping
 ├── step2_prepare_data.py       # Text preparation
 ├── step3_embeddings.py         # Embedding generation
 ├── step4_faiss_index.py        # FAISS indexing
@@ -146,7 +149,7 @@ app.py                     # Streamlit web application step1_scrape_shl.py      
 ├── step6_evaluation.py         # Recall@10 evaluation
 ├── step7_submission.py         # Final CSV generation
 │
-├── shl_assessments.csv         # Raw scraped catalog
+├── shl_assessments.csv         # Raw scraped SHL catalog
 ├── shl_final_data.csv          # Cleaned assessment data
 ├── shl_faiss.index             # FAISS vector index
 ├── final_submission.csv        # Required submission file
@@ -157,10 +160,11 @@ app.py                     # Streamlit web application step1_scrape_shl.py      
 │   ├── health_endpoint.png
 │   └── streamlit_app.png
 │
-├── requirements.txt
-├── approach_document.md
+├── requirements.txt            # Python dependencies
+├── approach_document.md        # Detailed technical approach
 ├── .gitignore
 └── README.md
+
 ---------------------------------------------------------------------------------------------
 Step-by-Step Final Approach Summary
 
