@@ -60,7 +60,7 @@ http://127.0.0.1:8000/docs
 Swagger UI provides a convenient interface to explore and test all available endpoints without using external tools.
 Swagger UI Screenshot
 
-[images/api_docs.png](images/api_docs.png)
+![Swagger API Documentation](images/api_docs.png)
 
 🔗 Available Endpoints (via Swagger UI)
 Endpoint	Method	Description
