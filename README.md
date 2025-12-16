@@ -113,7 +113,7 @@ Open official SHL assessment pages directly.
 The web app uses the same semantic search logic as the API and is intended for demonstration and manual exploration.
 
 📸 Streamlit UI Screenshot
-![Streamlit App UI](images/streamlit_app.png)
+![Streamlit App UI](images/streamlit_app.py.png)
 
 
 -----------------------------------------------------------------------------------------------------------------
