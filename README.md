@@ -77,7 +77,8 @@ Example response:
 }
 📸 Health Endpoint Screenshot (tested in Swagger UI)
 
-[images/health_endpoint.png](https://github.com/udayvimal/shl/blob/main/images/health_endpoint.png)
+![Health Endpoint](images/health_endpoint.png)
+
 
 🔍 Recommendation Endpoint
 The /recommend endpoint accepts a recruiter’s job description and returns the most relevant SHL assessments using semantic similarity search.
@@ -112,8 +113,8 @@ Open official SHL assessment pages directly.
 The web app uses the same semantic search logic as the API and is intended for demonstration and manual exploration.
 
 📸 Streamlit UI Screenshot
+![Streamlit App UI](images/streamlit_app.png)
 
-[images/streamlit_app.png](https://github.com/udayvimal/shl/blob/main/images/streamlit_app.py.png)
 
 -----------------------------------------------------------------------------------------------------------------
 Evaluation Methodology
@@ -127,7 +128,8 @@ Recall@10 measures whether at least one correct SHL assessment (ground truth) ap
 Results
 Total training queries: 10
 Mean Recall@10: 0.70
-[images/Mean_recall_score.png](https://github.com/udayvimal/shl/blob/main/images/Mean_recall_score.png)
+![Mean Recall@10](images/Mean_recall_score.png)
+
 This indicates that for most recruiter queries, the system successfully surfaces relevant SHL assessments within the top results.
 ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -136,9 +138,7 @@ Directory Structure
 The repository is organized in a step-wise and reproducible manner:
 
 shl/
-│
-├── app.py                     # Streamlit web application
-├── step1_scrape_shl.py         # SHL catalog scraping
+app.py                     # Streamlit web application step1_scrape_shl.py         # SHL catalog scraping
 ├── step2_prepare_data.py       # Text preparation
 ├── step3_embeddings.py         # Embedding generation
 ├── step4_faiss_index.py        # FAISS indexing
@@ -196,7 +196,8 @@ Note on SHL Website Availability
 SHL’s website is protected by CloudFront and may be temporarily unavailable or rate-limited.
 Therefore, the catalog is scraped once and cached locally. All downstream steps operate on cached data to ensure reproducibility and stability.
 Although previously my streamlit app working is fine .
-[images/Screenshot 2025-12-16 130606.png](https://github.com/udayvimal/shl/blob/main/images/Screenshot%202025-12-16%20130606.png)
+![SHL WEBSITE UNAVAILABLE](https://github.com/udayvimal/shl/blob/main/images/Screenshot%202025-12-16%20130606.png)
+
 ----------------------------------------------------------------------------------------------------------
 This project presents a practical, scalable, and SHL-compliant solution for SHL assessment recommendation using semantic search.
 It avoids unnecessary complexity, strictly adheres to the task requirements, and closely mirrors real-world recruiter and hiring workflows.
